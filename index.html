@@ -1,0 +1,184 @@
+<html>
+<head>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Play');
+
+
+html, body, section {
+	height:721px;
+
+}
+body {
+	color: #fff;
+	text-align: center;
+}
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.xop-container {
+	display: flex;
+	
+}
+div {
+	flex-direction: column;
+	justify-content: center;
+}
+ 
+.xop-left {
+	background: linear-gradient(rgba(0,0,0, 0), rgba(106, 15, 114, 0.10)), url("fdck.jpg");
+	background-size: cover;
+	background-position: center;
+	flex: 1;
+	padding: 1rem;
+  transition: all .5s ease-in-out;
+  text-transform: uppercase;
+  filter: grayscale(20%);
+  filter: hue-rotate(-40deg);
+}
+ 
+.xop-right {
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(195, 18, 1,0.1)), url("fdm2.jpg");
+	background-size: cover;
+	background-position: center;
+	flex: 1;
+	padding: 1rem;
+	transition: all .5s ease-in-out;
+    text-transform: uppercase;
+    
+}
+.xop-left:hover{
+	transform: scale(0.95);
+  filter: hue-rotate(90deg);
+}
+
+
+ .xop-right:hover {
+	transform: scale(0.95);
+  filter: hue-rotate(150deg);
+}
+.xop-container h1 {
+	letter-spacing: 2px;
+  font-family: 'Francois One', sans-serif;
+	font-size: 3rem;
+}
+.xop-button {
+	border-radius: 2px;
+	color: #fff;
+	background-color: #333;
+	padding: 10px 6px;
+	margin: 0 1%;
+	text-align: center;
+  font-family: 'Play', sans-serif;
+	text-decoration: none;
+  letter-spacing: 1px;
+	display: inline-block;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.5s;
+	width: 150px;
+	
+	
+}
+ 
+.xop-button:hover {
+	background: #fff;
+	color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .xop-container {
+    flex-direction: column;
+  }
+
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color:black;
+}
+
+.sidenav {
+  height:690px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity:0.6;
+  color:white;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:yellow;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+
+
+
+<section class="xop-container">
+<span style="font-size:50px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+	<div class="xop-left">
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+
+		<article>
+			<h1>Black Magic<br>Cocktail Bar</h1><a href="index1.html"class="xop-button"><b>Sit & Gaze</b></a>
+		</article>
+	</div>
+	<div class="xop-right">
+		<article>
+			<h1>Devil's Dining<br>Grill</h1><a href="muk.html" class="xop-button"><b>Sizzle & Blaze</b></a>
+		</article>
+	</div>
+</section>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
